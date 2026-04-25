@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gaea TGE Countdown</title>
+<link rel="stylesheet" href="index.css">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Exo+2:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div id="starfield"><canvas id="stars"></canvas></div>
+<div class="grid-overlay"></div>
+<div class="particles" id="particles"></div>
+
+<div class="wrapper">
+
+  <!-- LOGO -->
+  <div class="logo-wrap">
+    <div class="logo-orbit">
+      <!-- Outer slow-spinning dashed ring -->
+      <div class="orbit-outer"></div>
+      <!-- Tilted orbit ring (static ellipse illusion) -->
+      <div class="orbit-ring"></div>
+      <!-- Spinning track with gold dot -->
+      <div class="orbit-track">
+        <div class="orbit-dot"></div>
+      </div>
+      <!-- Your logo image -->
+      <img class="logo-svg" src="./index.png" alt="Gaea">
+    </div>
+    <div class="brand-name">GAEA</div>
+    <div class="tagline">The first decentralized AI training network</div>
+  </div>
+
+  <!-- Headline -->
+  <div class="headline">
+    <h1>Launching Soon</h1>
+    <div class="tge-label">TGE COUNTDOWN</div>
+  </div>
+
+  <!-- Countdown -->
+  <div class="countdown" id="countdown">
+    <div class="time-block">
+      <div class="time-card"><div class="inner-glow"></div><span class="digit" id="d-days">29</span></div>
+      <span class="label">Days</span>
+    </div>
+    <div class="separator">:</div>
+    <div class="time-block">
+      <div class="time-card"><div class="inner-glow"></div><span class="digit" id="d-hours">00</span></div>
+      <span class="label">Hours</span>
+    </div>
+    <div class="separator">:</div>
+    <div class="time-block">
+      <div class="time-card"><div class="inner-glow"></div><span class="digit" id="d-mins">00</span></div>
+      <span class="label">Minutes</span>
+    </div>
+    <div class="separator">:</div>
+    <div class="time-block">
+      <div class="time-card"><div class="inner-glow"></div><span class="digit" id="d-secs">00</span></div>
+      <span class="label">Seconds</span>
+    </div>
+  </div>
+
+  <!-- Progress bar -->
+  <div class="progress-wrap">
+    <div class="progress-meta">
+      <span>⬤ Airdrop Snapshot Active</span>
+      <span id="pct-label">0% Too TGE</span>
+    </div>
+    <div class="progress-track">
+      <div class="progress-fill" id="progress-fill" style="width:0%">
+        <div class="progress-dot"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Users badge -->
+  <div class="users-badge">
+    <div class="dot"></div>
+    <span><strong>850,000+</strong> users eligible for snapshot</span>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta">
+    <a class="btn-primary" href="https://app.aigaea.net/" target="_blank">
+      <span class="btn-icon">🌍</span> Get Active Now
+    </a>
+    <p>Every activity carries weight in the snapshot</p>
+  </div>
+
+</div>
+
+<script src="index.js" defer></script>
+</body>
+</html>
